@@ -3,7 +3,7 @@ import Core
 @_exported import Node
 @_exported import JSON
 
-extension JSON: NodeRepresentable, NodeConvertible {
+extension JSON: NodeConvertible {
 
     public init(node: Node, in context: Context) throws {
         self = node.toJSON()

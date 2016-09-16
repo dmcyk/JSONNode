@@ -3,7 +3,7 @@ import Node
 
 extension JSON {
     
-    func toNode() -> Node {
+    public func toNode() -> Node {
         switch self {
         case .array(let values):
             return .array(values.map { $0.toNode() })
@@ -29,7 +29,7 @@ extension JSON {
 
 extension Node {
     
-    func toJSON() -> JSON {
+    public func toJSON() -> JSON {
         switch self {
         case .array(let values):
             return .array(values.map { $0.toJSON() })
