@@ -1,10 +1,6 @@
 import Core
 import JSON
 
-public enum JSONError: Error {
-    case allowFragmentsNotSupported
-}
-
 extension JSON {
     public init(
         serialized: Bytes,
