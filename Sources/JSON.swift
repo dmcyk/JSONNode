@@ -2,7 +2,6 @@ import Foundation
 import Core
 @_exported import Node
 @_exported import JSON
-@_exported import JSONCore
 
 extension JSON: NodeConvertible {
 
